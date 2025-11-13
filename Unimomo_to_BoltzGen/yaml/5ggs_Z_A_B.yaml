@@ -1,0 +1,22 @@
+entities:
+  - file:
+      path: ../mmcif/5GGS.cif
+      include:
+        - chain:
+            id: F
+  - file:
+      path: ../mmcif/5GGS.cif
+      include:
+        - chain:
+            id: A
+        - chain:
+            id: B
+      design:
+        - chain:
+            id: A
+            res_index: 99..109  # HCDR3
+      structure_groups:
+        - group:
+            visibility: 0
+            id: A
+            res_index: 99..109  # HCDR3 has no specified backbone
