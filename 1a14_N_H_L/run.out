@@ -1,0 +1,32 @@
+
+=== Configuring pipeline ===
+Using dataset artifact: /hai/scratch/fangwu97/workspace/workspace/prounderjoe/boltzgen/boltzgen_cache/datasets--boltzgen--inference-data/snapshots/c3d36fd276e9caf098c75d4113c6d5eb320b1a4c/mols.zip
+************** Checking design spec: /hai/scratch/fangwu97/workspace/workspace/prounderjoe/boltzgen/Unimomo_to_BoltzGen/yaml/1a14_N_H_L.yaml **************
+Total designed residues: 13
+Design specification visualization is written to /hai/scratch/fangwu97/workspace/workspace/prounderjoe/boltzgen/BoltzGen_runs_unimomo/1a14_N_H_L/1a14_N_H_L.cif
+***********************************************************************************************************************************************************
+Using kernels: True [device capability: (10, 0)]
+Config overrides for protocol protein-anything: {}
+Using 1 devices
+Raw designs will be saved to: /hai/scratch/fangwu97/workspace/workspace/prounderjoe/boltzgen/BoltzGen_runs_unimomo/1a14_N_H_L/intermediate_designs
+Using diffusion batch size: 10
+Number of diffusion batches: 10
+Using model artifact: /hai/scratch/fangwu97/workspace/workspace/prounderjoe/boltzgen/boltzgen_cache/models--boltzgen--boltzgen-1/snapshots/c1be29e1f82ffcc72264f64b993c43fb4e0d17f0/boltzgen1_diverse.ckpt
+Using model artifact: /hai/scratch/fangwu97/workspace/workspace/prounderjoe/boltzgen/boltzgen_cache/models--boltzgen--boltzgen-1/snapshots/c1be29e1f82ffcc72264f64b993c43fb4e0d17f0/boltzgen1_adherence.ckpt
+Inverse-folded designs will be saved to: /hai/scratch/fangwu97/workspace/workspace/prounderjoe/boltzgen/BoltzGen_runs_unimomo/1a14_N_H_L/intermediate_designs_inverse_folded
+Using model artifact: /hai/scratch/fangwu97/workspace/workspace/prounderjoe/boltzgen/boltzgen_cache/models--boltzgen--boltzgen-1/snapshots/c1be29e1f82ffcc72264f64b993c43fb4e0d17f0/boltzgen1_ifold.ckpt
+Using model artifact: /hai/scratch/fangwu97/workspace/workspace/prounderjoe/boltzgen/boltzgen_cache/models--boltzgen--boltzgen-1/snapshots/c1be29e1f82ffcc72264f64b993c43fb4e0d17f0/boltz2_conf_final.ckpt
+Using model artifact: /hai/scratch/fangwu97/workspace/workspace/prounderjoe/boltzgen/boltzgen_cache/models--boltzgen--boltzgen-1/snapshots/c1be29e1f82ffcc72264f64b993c43fb4e0d17f0/boltz2_conf_final.ckpt
+Final ranked designs will be saved to: /hai/scratch/fangwu97/workspace/workspace/prounderjoe/boltzgen/BoltzGen_runs_unimomo/1a14_N_H_L/final_ranked_designs
+[1] design                   
+[2] inverse_folding          
+[3] folding                  
+[4] analysis                 
+[5] filtering                
+Configuration complete. Configs written to /hai/scratch/fangwu97/workspace/workspace/prounderjoe/boltzgen/BoltzGen_runs_unimomo/1a14_N_H_L/config
+Steps manifest written to /hai/scratch/fangwu97/workspace/workspace/prounderjoe/boltzgen/BoltzGen_runs_unimomo/1a14_N_H_L/steps.yaml
+
+=== Executing pipeline ===
+**************************************************
+Pipeline step 1 of 5: design
+Running command: python /hai/scratch/fangwu97/workspace/workspace/prounderjoe/boltzgen/envs/boltzgen-cuda128/lib/python3.11/site-packages/boltzgen/resources/main.py /hai/scratch/fangwu97/workspace/workspace/prounderjoe/boltzgen/BoltzGen_runs_unimomo/1a14_N_H_L/config/design.yaml

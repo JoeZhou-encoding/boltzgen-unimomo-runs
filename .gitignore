@@ -1,0 +1,23 @@
+# Python / build / OS
+__pycache__/
+*.pyc
+.DS_Store
+
+# Local caches & temp
+.hf/
+.tmp/
+tmp/
+.cache/
+*.log
+
+# Environment / IDE
+env/
+venv/
+*.code-workspace
+.vscode/
+
+# (Optional) exclude per-run heavy intermediates if you don’t want them:
+# */intermediate_designs/
+# */intermediate_designs_inverse_folded/fold_out_design_npz/
+# */refold_design_cif/
+# */refold_cif/
